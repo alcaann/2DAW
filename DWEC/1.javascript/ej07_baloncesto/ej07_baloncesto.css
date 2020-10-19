@@ -1,0 +1,19 @@
+#sinconvocar{
+    background-color: lightgreen;
+    width: 30%;
+    float: left;
+}
+#equipo1{
+background-color: lightyellow;
+width: 30%;
+float:left;
+}
+#equipo2{
+    background-color: red;
+    width: 30%;
+    float: left;
+}
+
+.seleccionado{
+    background-color: yellow;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+<head>
+	<meta charset= "utf-8">
+	<title>Ej 03 - value VS innerHTML VS textContent</title>
+
+</head>
+
+<body>
+<input type="text">
+<p>Prueba de un <strong>párrafo</strong></p>
+<h3>Esto es un encabezado nivel 3</h3>
+<label></label>
+<button >Lanzar comprobación</button>
+</body>
+</html>
+<script type="text/javascript">
+		const etiqueta = document.querySelector("label")
+
+		document.addEventListener("DOMContentLoaded",function(){
+
+			/*este código se ejecutará cuando el navegador haya terminado de procesar el HTML (aunque no se hayan procesado todavía las imágenes)
+			Si quieres esperar a que las imágenes también estén procesadas entonces debes usar en su lugar: window.onload = function(){...}*/
+		const boton= document.querySelector("button")
+		boton.addEventListener("click", comprobar)
+		
+		etiqueta.textContent = "Fin de ejecución del evento DOMContentLoaded"
+})
+		
+		function comprobar(){
+			const inputEjemplo = document.querySelector("input")
+			console.log("value del input es:"+ inputEjemplo.value)
+			console.log("innerHTML del input es:"+ inputEjemplo.innerHTML)
+			console.log("textContent del input es:"+ inputEjemplo.textContent)
+console.error("------------------------------------------------------")
+			const pEjemplo = document.querySelector("p")
+			console.log("value del p es:"+ pEjemplo.value)
+			console.log("innerHTML del p es:"+pEjemplo.innerHTML)
+			console.log("textContent del p es:"+ pEjemplo.textContent)
+console.warn("------------------------------------------------------")
+			const h3Ejemplo = document.querySelector("h3")
+			console.log("value del h3 es:"+ h3Ejemplo.value)
+			console.log("innerHTML del h3 es:"+ h3Ejemplo.innerHTML)
+			console.log("textContent del h3 es:"+ h3Ejemplo.textContent)
+console.error("------------------------------------------------------")
+		etiqueta.textContent = "Fin de ejecución de la función comprobar"
+			return (0);
+		}
+
+
+
+	</script> 
