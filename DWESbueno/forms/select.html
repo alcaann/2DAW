@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset= "utf-8">
+        <title>select</title>
+    </head>
+    <body>
+    <form action="select.php" method="post">
+    País: <br>
+    <select multiple name="paises[]">
+        <option value ="España">España</option>
+        <option value="Francia">Francia</option>
+
+    </select><br>Sexo<br>
+    <select name="sexo">
+        <option value="Hombre">Hombre</option>
+        <option value="Mujer">Mujer</option>
+        <option value="Otro">Otro</option>
+    </select><br>Asignaturas:<br>
+    
+    
+        <select multiple name="asignaturas[]">
+            <option value="Lengua y literatura">Lengua y literatura</option>
+            <option value="Matemáticas">Matemáticas</option>
+            <option value="Historia">Historia</option>
+            <option value="Dibujo técnico">Dibujo técnico</option>
+            <option value="Física">Física</option>
+        </select>
+        <input type="submit" value="Enviar datos!">
+    </form>
+
+</body>
+</html>

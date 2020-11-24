@@ -1,0 +1,29 @@
+.estaPaGoogle{
+    font-family: "Amatic SC";
+    font-size: 22px;
+}
+.peuno{
+    color:red;
+    font-family: "Vampiro One";
+
+}
+
+.pedos{
+    color:blue;
+    font-family: "Vampiro One";
+
+}
+
+@font-face {
+    font-family: 'Vampiro One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/vampiro-one-v11-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Vampiro One'), local('VampiroOne-Regular'),
+         url('./fonts/vampiro-one-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/vampiro-one-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/vampiro-one-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/vampiro-one-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/vampiro-one-v11-latin-regular.svg#VampiroOne') format('svg'); /* Legacy iOS */
+}
+

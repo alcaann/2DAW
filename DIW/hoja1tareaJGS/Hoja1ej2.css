@@ -1,0 +1,24 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+p{
+    color: #555;
+
+}
+a{
+    color: rgb(204,51,0);
+}
+em.especial{
+    color: #FFCC99;
+}
+#primero p{
+    color: rgb(51,102,153);
+}
+#primero em{
+    color: #F2F0A1;
+}
+.normal span{
+    font-weight: bold;
+}
+

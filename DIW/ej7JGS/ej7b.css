@@ -1,0 +1,44 @@
+p{
+    float:left;
+    margin: .6em;
+    color: olivedrab;
+}
+p::first-letter{
+    
+    border-style: groove;
+    border-color: #a0db3a;
+    padding: .25em .35em .25em .35em;
+    background-color: greenyellow;
+    font-size: 3em;
+    float: left;
+    border-width: .13em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    margin-right: .2em;
+    
+}
+p:last-of-type{
+    color: pink;
+}
+p:last-of-type::first-letter{
+    border-color: pink;
+    background: rgba(76,76,76,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+
+}
+/*
+ 2. Para distinguir entre pseudoelementos y pseudoclases, se decidió incorporar en css3 los dos puntos dobles, pero decidieron mantener la retrocompatibilidad de los dos puntos simples para evitar incompatibilidades.
+ 3. El atributo width de css no se aplica en referencias con pseudo-elementos.
+ 4. Si.
+ 7. He usado cssmatic y me ha generado líneas adicionales para asegurar la compatibilidad con algunos navegadores(
+ -o para Ópera, 
+ -ms para Internet Explorer, 
+ -moz para Firefox, 
+ -webkit para Chrome o Safari 4,
+ y la ausencia de prefijo como estándar de W3C
+ )
+*/

@@ -1,0 +1,39 @@
+
+body{
+    font-size: 15px;
+}
+#interior{
+    border: solid 2rem;
+}
+#exterior{
+    border: solid 2em;
+}
+html{
+    font-size: 20px;
+}
+
+/*-------- PARTE 1 -------
+
+1. Establece un tamaño de letra de 15 px para body.
+En la caja interior establece un borde sólido de 2 rem.
+Calcula qué tamaño en píxeles tendrá el borde de esta caja interior.
+    32px, ya que el borde por defecto de la etiqueta html es de 16px.
+
+2. Establece un tamaño de letra de 20 px para html.
+Calcula qué tamaño en píxeles tendrá el borde de la caja interior.
+¿Cambia el resultado?
+    Si, ahora tiene 40px de borde, ya que hemos cambiado el tamaño de la letra del elemento raíz.
+¿Le afecta al borde expresado en rem el tamaño de la letra de html?
+    Si.
+¿Le afecta al borde expresado en rem el tamaño de la letra de body?
+    No.
+
+3. Establece un tamaño de borde de 2 em para la caja exterior.
+Calcula qué tamaño en píxeles tendrá el borde.
+    30px, ya que em hace referencia a los 15px de font-size de su padre el body.
+¿Le afecta al borde expresado en em el tamaño de la letra de html?
+    No.
+¿Le afecta al borde expresado en em el tamaño de la letra de body?
+    Si, ya que el body en este caso es el padre de la caja exterior.
+
+*/

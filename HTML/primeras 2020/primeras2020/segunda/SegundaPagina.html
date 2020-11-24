@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es-ES" style="background-color:#dbe6ad;">
+	<head>
+		<title>CSS alternativos</title>
+		<link rel="stylesheet" href="styles.css" title="Hoja1">
+<link href="styles1.css" rel="stylesheet" type="text/css" title="Hoja 2">
+	<link rel="stylesheet" href="styles2.css" title="Hoja3">
+		<meta charset="UTF-8">
+		<style>
+			body {background-color:  #d2ade6;}
+			h1   {color: rgb(255, 0, 0);}
+			#p01 {    color: blue;}
+			p.verde {color: green}
+			#pad { border: 15px solid #36666c;
+                      padding: 50px; margin: 100px;}
+		</style>
+
+	</head>
+	<body>
+		<h1 style="text-align:center;" >Segunda página: CSS (Un repaso básico)</h1>
+		<h2>CSS</h2>
+		<p>CSS significa C ascading S tyle S heets.
+
+CSS describe cómo los elementos HTML se van a mostrar.<!-- en la pantalla, papel, o en otros medios --></p>
+		<a href="http://desarrolloweb.dlsi.ua.es/libros/html-css/como-crear-una-hoja-de-estilo-para-impresion">Documentación impresón</a>
+
+		<p>CSS se puede añadir a los elementos HTML de 3 formas: <br/>
+<br>
+Inline - mediante el atributo de estilo en los elementos HTML <br/> 
+Interna - mediante el uso de un elemento style en la sección head <br/>
+Externo - mediante el uso de un archivo CSS externo: Para utilizar una hoja de estilos externa, añadir un enlace a ella en la sección &lt;head&gt; de la página HTML:&lt; link rel="stylesheet" href="styles.css" &gt;
+			</p>
+		<p> Sintáxis:</p><p> <img src="selector.gif" alt="Selector"> </p>
+		<p>NOTA: Aquí no veremos la reglas @</p>
+		
+			<p>Se pueden enlazar dos o más hojas de estilo, con lo que el código fuente contendrá tantas etiquetas &lt;link /&gt; como hojas enlazadas:<br>
+			En este caso, el navegador aplica simultáneamente las dos hojas de estilo a la página web. Si un elemento está definido en las dos hojas, el navegador hará lo que diga la última hoja de estilo de la lista.
+			</p>
+			<p><b>Las hojas de estilo se llaman hojas de estilo "en cascada" porque:</b><br>
+Las propiedades de estilo pueden estar escritas en varios sitios (en varios lugares de la página web o de la hoja de estilo) y dependiendo del sitio, afectan a más o menos elementos.
+Cuando un elemento está contenido en otro (por ejemplo, un párrafo p dentro de una división div), al elemento de dentro se le aplican también las propiedades definidas para el elemento de fuera (al párrafo p se le aplicarían las propiedades definidas para la división div).
+Dos reglas distintas pueden ser de aplicación a un mismo elemento (por ejemplo, a un párrafo p con clase nombre, le es de aplicación tanto el selector .nombre como el selector p).
+Si las propiedades (escritas en diferentes sitios o para diferentes elementos) no entran en conflicto, el navegador aplica todas las propiedades. Por ejemplo, si el color de fondo de un elemento está definido en un sitio y el tamaño de letra en otro sitio, el navegador aplicará ambas propiedades al elemento.
+Pero si las propiedades entran en conflicto (por ejemplo, el color del fondo del elemento está definido en varios sitios con colores distintos), existen reglas para decidir qué propiedad tiene preferencia.</p>
+	<p><b>Reglas de aplicación de los estilos:</b><br> 
+
+Si se define la misma propiedad para la misma etiqueta con el mismo selector en dos sitios distintos, las reglas de precedencia son las siguientes: <br>
+Las propiedades definidas en un atributo style se imponen a las propiedades definidas en la etiqueta style.<br>
+Las propiedades definidas en la etiqueta style se imponen a las propiedades definidas en una hoja de estilo enlazada.<br>
+Las propiedades definidas en un atributo style se imponen a las propiedades definidas en una hoja de estilo enlazada.</p>
+		<h3>El atributo id</h3>
+		<p >El atributo id
+			Para definir un estilo específico para un elemento especial, añadir un atributo id (el valor debe ser único dentro del documento HTML) al elemento ej:  p id="p01" </p>
+		<p id="p01">Párrafo distinto con id en azul</p>
+		
+		<h3>El atributo class</h3>
+		<p>El atributo class:
+Para definir un estilo para un tipo especial de elementos, añadimos un atributo clase al  elemento, ej:p class="verde"</p>
+		<p class="verde"> Este párrafo es de clase verde</p>
+		<h3>Hojas de estilo alternativas</h3>
+		<p>Para que sean hojas de estilo alternativas, es decir, para que el usuario pueda elegir en el navegador qué hoja de estilo quiere aplicar, es suficiente con que los enlaces a las hojas de estilo tengan el atributo title.<br>
+		 <del>Según HTML 4 Sólo una de las hojas de estilo debería tener el atributo rel="stylesheet" y que las demás deberían tener el atributo rel="alternate stylesheet".</del> </p>
+		
+		<p><a href="http://www.mclibre.org/consultar/htmlcss/css/css_cssalternativas.html"> Documentación Enlace a Mclibre</a></p>
+		
+		<p><b>Ejercicio</b> Abrir está página con: <br>
+		Firefox <br>
+		IE <br>
+		Chrome (Añadir la extensión AltCss)<br>
+		Edge no soporta hoja alternativas.
+		</p>
+		<p><b>Ejercicio:</b>
+		Crear una página al menos con 3 hojas de estilos distintos y bien distinguibles.
+		</p>
+		
+		<h3> Algunas propiedades básicas:</h3>
+		<p>CSS Fonts
+The CSS color property defines the text color to be used.<br>
+
+The CSS font-family property defines the font to be used.<br>
+
+The CSS font-size property defines the text size to be used</p>
+<h3>Modelo de cajas</h3>
+<a href="http://www.mclibre.org/consultar/htmlcss/css/css_modelocaja.html">Modelo de cajas en Mclibre</a>
+<a href="http://www.mclibre.org/consultar/htmlcss/css/css_bordes.html">Bordes en Mclibre.</a>
+<p> CSS Border
+The CSS border property defines a border around an HTML element:<br>
+The CSS margin property defines a margin (space) outside the border.
+		</p>
+<p id="pad"> The CSS padding property defines a padding (space) between the text and the border:<br>
+En este caso originalmente:  border: 5px solid #36666c;
+    padding: 30px; margin: 50px;<br>
+    Ejercicio: Cambiar margin, padding etc. </p>
+    
+   <p> Ejercicios:</p>
+   <p style=" padding: 50px 50px;
+  border: green 5px solid;
+  border-radius: 450px; margin: 20px">La futura recomendación CSS 3: Fondos y bordes permite definir bordes con esquinas redondeadas:</p>
+  <p style=" border: red 20px ridge; padding: 20px 20px">La propiedad compuesta border permite establecer simultáneamente los cuatro bordes (arriba, derecha, abajo e izquierda) de un elemento, definiendo su:
+color (nombre de color o código RGB o el valor transparent)
+grosor (valor absoluto de distancia, o los valores thin (fino), medium (medio) o thick (grueso))
+ y el estilo <br>
+ Ejercicio cambiar esto borde a style=" border: red 20px ridge;
+ </p>
+   
+   
+   
+   
+   
+   
+   
+   
+	</body>
+	</html>

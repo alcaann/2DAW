@@ -1,0 +1,30 @@
+p{
+    float:left;
+    margin: .6em;
+    color: olivedrab;
+}
+p span{
+    color:darkolivegreen;
+    border-style: groove;
+    border-color: #a0db3a;
+    padding: .25em .35em .25em .35em;
+    background-color: greenyellow;
+    font-size: 3em;
+    float: left;
+    border-width: .13em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    margin-right: .2em;
+    width: .8em;
+   text-align: center;
+}
+p:last-of-type{
+    color: pink;
+}
+p:last-of-type span{
+    color: darkmagenta;
+    background-color: pink;
+    border-color:rgb(255, 113, 255);
+}
+
+

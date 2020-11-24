@@ -1,0 +1,52 @@
+body{
+    font-family: 'Dancing Script', cursive;
+    background-image: url("rs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    
+    font-weight: 700;
+    background-color: wheat;
+    border: 0.2em solid;
+    border-color: black;
+    
+    border-radius: 10px;
+    
+    width: 12em;
+}
+ul{
+    float: left;
+    list-style-type: square;
+    background-color: turquoise;
+    border: 1em solid;
+    border-color: teal;
+    
+    border-radius: 10px;
+    
+    width: 12em;
+    
+}
+
+ol{
+    float: right;
+    border-radius: 10px;
+    background-color: orange;
+    border: 1em solid;
+    border-color: brown;
+    list-style-type: upper-roman ;
+}
+a:link{color:black;
+text-decoration: none;
+}
+a:hover{
+    color:pink;
+}
+@media print{
+    body *{
+        border: none;
+        font-size: small;
+        float: none;
+    }
+    
+}

@@ -1,0 +1,14 @@
+<!-- El tipo de codificación de datos, enctype, DEBE especificarse como sigue -->
+<form action="upload.php" method="post" enctype="multipart/form-data"> 
+   
+   	<!-- MAX_FILE_SIZE debe preceder al campo de entrada del fichero -->
+	<input type="hidden" name="MAX_FILE_SIZE" value="100000"> 
+   	<br> 
+   	<br> 
+   	<b>Enviar un nuevo archivo: </b> 
+   	<br> 
+   	<!-- El nombre del elemento de entrada determina el nombre en el array $_FILES -->
+	<input name="userfile" type="file"> 
+   	<br> 
+   	<input type="submit" value="Enviar"> 
+</form>

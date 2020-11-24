@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej4</title>
+</head>
+<body>
+    
+							<!--   ej4               -->
+							<h2> Citas y entrecomillados </h2>
+							<p>Etiquetas: </p>
+
+							
+&lt;abbr&gt;	     Defines an abbreviation or acronym<br>
+<abbr title="Organización de las Naciones Unidas">ONU</abbr><br><br>
+
+&lt;address&gt;    Defines contact information for the author/owner of a document<br>
+<address>
+    Escrito por Pepe Perez.<br>
+    Visistenos en:<br>
+    Pepeperez.com<br>
+    Calle calvario s/n <br>
+    Espinardo
+</address><br><br>
+&lt;bdo&gt;  	     Defines the text direction<br>
+<bdo dir="rtl">ESTO ESTÁ ESCRITO DE DERECHA A IZQUIERDA (right-to-left) </bdo><br><br>
+&lt;blockquote&gt; Defines a section that is quoted from another source<br>
+<blockquote cite="http://www.w3schools.com/tags/tag_blockquote.asp"> El elemento Blockquote Se utliza para mostrar citas o referencias a otras fuentes de información. Los navegadores indentan la información. Admite el atributo cite, que no se visualiza para contenerla URL de dicha fuente dicha fuente. Tal como vemos es este ejemplo. </blockquote><br><br>
+&lt;cite&gt;	     Defines the title of a work<br>
+<cite>El grito </cite><br><br>
+&lt;q&gt;	     Defines a short inline quotation<br>
+<q>entrecomillada con la etiqueta &lt;q&gt;</q><br><br>
+
+                            <h2> Código de computadoras</h2>
+							
+&lt;code&gt;  Definine código de programa<br>
+<code>main() { printf ("Hola, mundo"); }</code><br><br>
+&lt;kbd&gt; 	Defines keyboard input<br>
+<kbd>Ctrl+Alt+Spr</kbd><br><br>
+&lt;samp&gt;  Defines computer output<br>
+<samp>Hola, mundo</samp><br><br>
+&lt;var&gt;	Defines a variable<br>
+<var>$saludo</var><br><br>
+<h2>Entidades y utf-8</h2>
+
+<h3>No break space: &amp;nbsp; </h3>
+
+							<p>Ejemplo: Bla blalba bla bla y el vehículo viajaba a la tremenda velocidad de 300&nbsp;Km/h. Nota: Cambiar el tamaño de la pantalla para combrobar que <q>300&nbsp;Km/h</q> no se separa</p>
+							<p>Ejemplo 2: Tambien nos permite insertar espacios en blanco &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;que no eliminará el navegador.</p>
+
+                            <h3>El guión sin interrupción ( & # 8209; )</h3> <p>permite usar un carácter de guión (-) que no se romperá. Ejem&#8209;plo ejem-plo (cambiar tamaño pantalla para ver el efecto)</p>
+                            
+							<p>Otros:</p>
+                            <p>50 &pound; &copy;Yo</p>
+                            
+                            <h1>Entidades de Carácter</h1>
+
+
+<table >
+    <tbody><tr>
+      <th>Result</th>
+      <th>Description</th>
+      <th>Entity Name</th>
+      <th>Entity Number</th>
+    </tr>
+    <tr>
+      <td style="height: 29px"></td>
+      <td style="height: 29px">non-breaking space</td>
+      <td style="height: 29px">&amp;nbsp;</td>
+      <td style="height: 29px">&amp;#160;</td>
+    </tr>
+    <tr>
+      <td>&lt;</td>
+      <td>less than</td>
+      <td>&amp;lt;</td>
+      <td>&amp;#60;</td>
+    </tr>
+    <tr>
+      <td>&gt;</td>
+      <td>greater than</td>
+      <td>&amp;gt;</td>
+      <td>&amp;#62;</td>
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>ampersand</td>
+      <td>&amp;amp;</td>
+      <td>&amp;#38;</td>
+    </tr>
+    <tr>
+      <td>"</td>
+      <td>double quotation mark </td>
+      <td>&amp;quot;</td>
+      <td>&amp;#34;</td>
+    </tr>
+    <tr>
+      <td>'</td>
+      <td>single quotation mark (apostrophe) </td>
+      <td>&amp;apos;</td>
+      <td>&amp;#39;</td>
+    </tr>
+    <tr>
+      <td>¢</td>
+      <td>cent</td>
+      <td>&amp;cent;</td>
+      <td>&amp;#162;</td>
+    </tr>
+    <tr>
+      <td>£</td>
+      <td>pound</td>
+      <td>&amp;pound;</td>
+      <td>&amp;#163;</td>
+    </tr>
+    <tr>
+      <td>¥</td>
+      <td>yen</td>
+      <td>&amp;yen;</td>
+      <td>&amp;#165;</td>
+    </tr>
+    <tr>
+      <td>€</td>
+      <td>euro</td>
+      <td>&amp;euro;</td>
+      <td>&amp;#8364;</td>
+    </tr>
+    <tr>
+      <td>©</td>
+      <td>copyright</td>
+      <td>&amp;copy;</td>
+      <td>&amp;#169;</td>
+    </tr>
+    <tr>
+      <td>®</td>
+      <td>registered trademark</td>
+      <td>&amp;reg;</td>
+      <td>&amp;#174;</td>
+    </tr>
+    </tbody></table>
+    <p>Otros:</p>
+							<p>50 &pound; &copy;Yo</p>
+
+
+							<h3>Signos diacríticos</h3>
+
+								¡Ojo! W3C lo tiene en la referencia, pero el validador da error al no ser una normalización UNICODE (ver error en brackets) </p>
+							<p> Se obtienen escribiendo la letra y, a continuación, &amp;#768; para el acento llano, 769 para el agudo, 770 para el circunflejo y 771 para la virguilla </p>
+							<p>Acento llano a&#768;,
+								cirncunflejo a&#770;,
+								con virguilla a&#771;.</p>
+							<p>Desde luego las podemos obtener desde el teclado. à â </p>
+							<p>Utilizado UTF-8, no hay problema, por tanto es la codificación que debemos usar.&nbsp; (&amp;x00e0;) &#x00e0;, &nbsp; (&amp;x00e2;) &#x00e2;, (&amp;x00e3;) &#x00e3; </p>
+
+							<h2>Entidades de símbolos</h2>
+							<p>Muchos símbolos matemáticos, técnicos y de moneda no están presentes en un teclado normal.<br>
+								Si no existe un nombre de entidad, puede usar un número de entidad, un decimal o una referencia hexadecimal.</p>
+							<p>Ejemplo (ver código fuente):</p>
+							<p>Ver código por nombre &euro;</p>
+							<p>Por número de entidad &#8364;</p>
+							<p>por referencia hexadecimal &#x20AC;</p>
+							<p>(8364 en hexadecimal es 20AC)</p>
+							<h3>Operadores matemáticos</h3>
+							<p>Para todo &forall;</p>
+							<p>Sumatorio &sum;</p>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+div.cuadro{
+    padding: 1em;
+    border-radius: 12px;
+    background-color: grey;
+
+}
+div span{
+    color:white;
+    border-color: white;
+    border: solid 2px;
+    border-radius: 12px;
+    padding: .5em;
+}
+div span#anterior{
+    float: left;
+}
+div span#siguiente{
+float: right;
+}
+div.clear{
+    clear: both;
+}

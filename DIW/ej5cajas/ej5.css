@@ -1,0 +1,35 @@
+body {
+    background-image: url("IMG_6913-900x1200.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div{
+    
+    display: inline-block;
+    border-radius:50px;
+    border: 3pt solid #ffffff;
+    padding: 10pt; /*Si hay diferencia entre usar px y em para el padding*/
+    background-color:pink;
+    font-size: normal;/*También hay diferencia al cambiarle el font-size a los divs*/
+    
+
+}
+span{
+    color: #ffffff;
+    background-color:#000000;
+    display: block;
+    padding: 10;
+    
+}
+span:nth-of-type(1){
+    width: 100pt;
+}
+span:nth-of-type(2){
+    width: 100px;
+}
+span:nth-of-type(3){
+    width: 1in;
+}
+span:nth-of-type(4){
+    width: 3cm;
+}

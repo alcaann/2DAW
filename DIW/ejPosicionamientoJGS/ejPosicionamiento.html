@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang=es>
+
+<head>
+    <title>acho</title>
+   <style>
+      #capa1
+         {
+            /*
+            al establecer la posición de capa1 como relativa, 
+            el contenido se muestra en la posición establecida,
+            pero el espacio que ocuparía si posición estuviera indefinida
+            sigue impidiendo que otros elementos de la misma capa se sitúen en él
+            */
+             position: absolute;
+             top: 200px;
+             left: 200px;
+         width: 200px;
+         height: 200px;
+         background-color: blue;
+         }
+
+      #capa1a
+         {
+        position: absolute;
+        right: 0;
+        top: 0;
+         width: 50px;
+         height: 50px;
+         background-color: red;
+         }
+
+      #capa1b
+         {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+         width: 50px;
+         height: 50px;
+         background-color: green;
+         }
+
+         #capa2{
+             background-color: yellow;
+             width: 100px;
+             height: 100px;
+         }
+   </style>
+</head>
+
+<body>
+   <div id="capa1">
+       <div id="capa1a"></div>
+       <div id="capa1b"></div>
+    </div>
+    <div id="capa2">
+
+    </div>
+   
+</body>
+
+</html>
