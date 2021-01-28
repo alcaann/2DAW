@@ -32,10 +32,10 @@ function displayEntrada( $missingFields )
 	<INPUT TYPE="hidden" name="opcion" value="entrada">
 	<br>
 	<label for="usuario" > Usuario</label>
-	<INPUT TYPE="text" <?php validateField( "usuario", $missingFields );?>" NAME="usuario">
+	<INPUT TYPE="text" <?php validateField( "usuario", $missingFields );?> NAME="usuario">
 	<br>
 	<label for="password" >Password</label>
-	<INPUT TYPE="password" <?php validateField( "password", $missingFields );?> " NAME="password">
+	<INPUT TYPE="password" <?php validateField( "password", $missingFields );?> NAME="password">
 	<br>
 	<input type="submit" name="submit" id="submitButton" value="Enviar" >
 	<input type="reset" name="reset" id="resetButton"	value="Borrar" >

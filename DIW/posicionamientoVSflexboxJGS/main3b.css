@@ -1,0 +1,54 @@
+/**
+ * Fichero: main3.css; 
+ * Descripción: Estilos ejercicio 1-C examen DIW;
+ * Autor:;
+ * Fecha:;
+ *
+ *  -- Color del borde es azul
+ **/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 1000px;
+	display:flex;
+	background-color: green;
+	flex-wrap: wrap;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	border:dashed 1px blue;
+	color: white;
+	text-align: center;
+	box-sizing: border-box;
+	
+}
+
+
+div#cubo3{
+	width: 600px;
+}
+
+div:nth-of-type(1){
+	background-color: coral;
+	order: -1;
+}
+div:nth-of-type(2){
+	background-color: darkgoldenrod;
+
+}
+div:nth-of-type(3){
+	background-color: chocolate;
+	width: 60%;
+	order: -1;
+}
+div:nth-of-type(4){
+	background-color: darkmagenta;
+	width: 100%;
+	align-self: flex-start;
+	
+}

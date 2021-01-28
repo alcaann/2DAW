@@ -1,0 +1,35 @@
+.celda{
+    width: 30px;
+    height: 30px;
+    border: thin solid black;
+    float:left;
+    box-sizing: border-box;
+}
+#tablero{
+    width: 330px;
+    
+border: 3px solid green;
+display: inline-block;
+}
+
+/* .celda[data-mina="true"]{
+    background-color:red;
+
+}  */
+.bandera{
+    background-image: url("bandera.png") ;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    
+     background-size: contain;
+}
+.mina_explotada{
+    background-image: url("mina.png") ;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    
+     background-size: contain; 
+}
+.agua{
+    background-color: lightblue;
+}

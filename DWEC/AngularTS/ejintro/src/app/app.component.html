@@ -1,0 +1,10 @@
+<h1>Mi app {{title}} funciona</h1>
+<h3> Lista de componentes de un PC</h3>
+<ul >
+  <li 
+  style="background-color: {{pieza.stock?'green':'red'}}" 
+  *ngFor="let pieza of piezas" 
+  [ngClass]="pieza.stock ? 'conStock' : 'sinStock'">{{pieza.nombre}} --- {{pieza.precio}}€</li>
+</ul>
+
+<router-outlet></router-outlet>

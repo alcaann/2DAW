@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej01</title>
+    <style>
+        table tr td:nth-of-type(1){
+            text-align: right;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", main);
+        function main(){
+            document.registro.addEventListener("invalid", validacion,true);
+            document.getElementById("enviar").addEventListener("click",enviar, false);
+            document.registro.addEventListener("input", controlar, false);
+
+            
+        }
+        function validacion(e) {
+            var elemento = e.target;
+            elemento.style.background = '#FFDDDD';
+        }
+        function enviar() {
+            var valido = document.registro.checkValidity();
+            if (valido) {
+                document.registro.submit();
+            }else{
+                document.getElementById("achoError").style.display="block";
+                
+            }
+        }
+        function controlar(e) {
+            var elemento = e.target;
+            if (elemento.validity.valid) {
+                elemento.style.background = '#FFFFFF';
+            } else {
+                elemento.style.background = '#FFDDDD';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Registro</h1>
+    </header>
+    <form action="#" method=post name="registro">
+        <fieldset>
+            <legend>Datos Personales <small>(los campos marcados con * son obligatorios)</small></legend>
+            <br>
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombreUsuario">Nombre* y apellidos:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="nombreUsuario" required="required" placeholder="Nombre">
+                        <input type="text" id="apellidosUsuario" placeholder="Apellidos">
+                    </td>
+
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr>
+                    <td>
+                        <label for="emailUsuario">Email*:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="emailUsuario" required="required">
+                    </td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr>
+                    <td>
+                        <label>Sexo*:</label>
+                    </td>
+                    <td>
+                        <input type="radio" value="mujer" name="radio1" required="required"><label>Mujer</label>
+                        <input type="radio" value="hombre" name="radio1"><label>Hombre</label>
+                        <input type="radio" value="otro" name="radio1"> <label>otro</label>
+                    </td>
+
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr>
+                    <td>
+                        <label for="fechaNacimientoUsuario">Fecha de nacimiento*:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="fechaNacimientoUsuario" required="required">
+                    </td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr>
+                    <td>
+                        <label for="contraseniaUsuario">Contraseña*:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="contraseniaUsuario" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{4,9}$" required="required" ><small>(Requiere mayúsculas, minúsculas, dígitos. Longitud mínima 4 carácteres y máxima 8)</small>
+                    </td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr>
+                    <td>
+                        <label for="telefonoUsuario">Teléfono*:</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option>+34</option>
+                            <option>+35</option>
+                        </select>
+                        <input type="tel" id="telefonoUsuario" placeholder="Teléfono" required="required">
+                    </td>
+
+                </tr>
+                <tr><td colspan="2" ><h2 id="achoError" style="color: red; display:none; float: left;">valores no válidos</h2></td></tr>
+            </table>
+            <br>
+            <p><input type="checkbox" id="aceptarCondiciones" required="required"> *Acepto que he leido los <a href="#">términos y condiciciones</a></p>
+            
+        </fieldset>
+        
+        <br>
+        <input type="submit" name="enviar" value="Enviar" id="enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[Mon, 11 Jan 21 18:34:52 +0100] - The master socket could not be created: The operation completed successfully 
+[Mon, 11 Jan 21 18:34:52 +0100] - Server initilaized on 127.0.0.1:8069 
+[Mon, 11 Jan 21 18:34:52 +0100] - New client connecting on socket #acho 
+[Mon, 11 Jan 21 18:34:52 +0100] - Starting server... 
+[Mon, 11 Jan 21 18:36:51 +0100] - The master socket could not be created: The operation completed successfully 
+[Mon, 11 Jan 21 18:36:51 +0100] - Server initilaized on 127.0.0.1:8069 
+[Mon, 11 Jan 21 18:36:51 +0100] - New client connecting on socket #acho 
+[Mon, 11 Jan 21 18:36:51 +0100] - Starting server... 
+[Mon, 11 Jan 21 18:38:51 +0100] - The master socket could not be created: The operation completed successfully 
+[Mon, 11 Jan 21 18:38:51 +0100] - Server initilaized on 127.0.0.1:777 
+[Mon, 11 Jan 21 18:38:51 +0100] - New client connecting on socket #acho 
+[Mon, 11 Jan 21 18:38:51 +0100] - Starting server... 
+[Mon, 11 Jan 21 18:40:56 +0100] - The master socket could not be created: The operation completed successfully 
+[Mon, 11 Jan 21 18:40:56 +0100] - Server initilaized on 192.168.100.13:777 
+[Mon, 11 Jan 21 18:40:56 +0100] - New client connecting on socket #acho 
+[Mon, 11 Jan 21 18:40:56 +0100] - Starting server... 
+[Mon, 11 Jan 21 18:41:37 +0100] - The master socket could not be created: The operation completed successfully 
+[Mon, 11 Jan 21 18:41:37 +0100] - Server initilaized on 192.168.100.13:777 
+[Mon, 11 Jan 21 18:41:37 +0100] - New client connecting on socket #acho 
+[Mon, 11 Jan 21 18:41:37 +0100] - Starting server... 
+[Mon, 11 Jan 21 18:53:39 +0100] - The master socket could not be created: The operation completed successfully 
+[Mon, 11 Jan 21 18:53:39 +0100] - Server initilaized on 192.168.100.13:777 
+[Mon, 11 Jan 21 18:53:39 +0100] - New client connecting on socket #acho 
+[Mon, 11 Jan 21 18:53:39 +0100] - Starting server... 
+[Mon, 11 Jan 21 18:55:26 +0100] - The master socket could not be created: The operation completed successfully 
+[Mon, 11 Jan 21 18:55:26 +0100] - Server initilaized on 192.168.100.13:777 
+[Mon, 11 Jan 21 18:55:26 +0100] - New client connecting on socket #acho 
+[Mon, 11 Jan 21 18:55:26 +0100] - Starting server... 
+[Mon, 11 Jan 21 18:57:36 +0100] - The master socket could not be created: The operation completed successfully 
+[Mon, 11 Jan 21 18:57:36 +0100] - Server initilaized on 192.168.100.13:777 
+[Mon, 11 Jan 21 18:57:36 +0100] - New client connecting on socket #acho 
+[Mon, 11 Jan 21 18:57:36 +0100] - Starting server... 
